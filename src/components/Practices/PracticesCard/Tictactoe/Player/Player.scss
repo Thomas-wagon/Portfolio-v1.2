@@ -1,0 +1,27 @@
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px 15px 15px;
+  &.active {
+    background-color: #eacfcf;
+  }
+  input {
+    text-align: center;
+    border: none;
+    background: none;
+    font-size: inherit;
+    margin: 10px 0;
+  }
+  .identity {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 30px;
+      object-fit: cover;
+      margin: inherit;
+    }
+  }
+}

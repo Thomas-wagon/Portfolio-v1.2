@@ -1,0 +1,102 @@
+[
+  {
+    "toolType": "Languages and Frameworks",
+    "toolList": [
+      {
+        "toolIcon": "ruby.png",
+        "toolTip": "Ruby"
+      },
+      {
+        "toolIcon": "rails.png",
+        "toolTip": "Rails"
+      },
+      {
+        "toolIcon": "javascript.png",
+        "toolTip": "Javascript"
+      },
+      {
+        "toolIcon": "react.png",
+        "toolTip": "React"
+      },
+      {
+        "toolIcon": "gatsby.png",
+        "toolTip": "Gatsby"
+      }
+    ]
+  },
+  {
+    "toolType": "Frontend tools",
+    "toolList": [
+      {
+        "toolIcon": "html.png",
+        "toolTip": "HTML 5"
+      },
+      {
+        "toolIcon": "css.png",
+        "toolTip": "CSS 3"
+      },
+      {
+        "toolIcon": "sass.png",
+        "toolTip": "SASS"
+      },
+      {
+        "toolIcon": "bootstrap.png",
+        "toolTip": "Bootstrap"
+      },
+      {
+        "toolIcon": "figma.png",
+        "toolTip": "Figma"
+      },
+      {
+        "toolIcon": "inkscape.png",
+        "toolTip": "Inkscape"
+      }
+    ]
+  },
+  {
+    "toolType": "Backend tools",
+    "toolList": [
+      {
+        "toolIcon": "git.png",
+        "toolTip": "Git"
+      },
+      {
+        "toolIcon": "postgresql.png",
+        "toolTip": "Postgresql"
+      },
+      {
+        "toolIcon": "cloudinary.png",
+        "toolTip": "Cloudinary"
+      },
+      {
+        "toolIcon": "heroku.png",
+        "toolTip": "Heroku"
+      },
+      {
+        "toolIcon": "netlify.png",
+        "toolTip": "Netlify"
+      }
+    ]
+  },
+  {
+    "toolType": "CAO softwares",
+    "toolList": [
+      {
+        "toolIcon": "creo.png",
+        "toolTip": "Creo"
+      },
+      {
+        "toolIcon": "solidworks.png",
+        "toolTip": "Solidworks"
+      },
+      {
+        "toolIcon": "autocad.png",
+        "toolTip": "Autocad"
+      },
+      {
+        "toolIcon": "catia.png",
+        "toolTip": "Catia"
+      }
+    ]
+  }
+]
