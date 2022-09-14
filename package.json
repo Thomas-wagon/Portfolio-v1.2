@@ -1,8 +1,8 @@
 {
-  "name": "my-portfolio-v1.2",
+  "name": "thomas-viaules-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "my-portfolio-v1.2",
+  "description": "thomas viaules - I'm a web developer based in Montreal, welcome to my portfolio",
   "keywords": [
     "gatsby"
   ],
@@ -15,7 +15,9 @@
   },
   "dependencies": {
     "gatsby": "^4.22.1",
+    "gatsby-plugin-sass": "^5.23.0",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "tippy.js": "^6.3.7"
   }
 }

@@ -1,49 +1,36 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import "./404.scss";
+import "../styles/styles.scss";
 
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+// import images
+import Oglake from "../images/og_lake.png";
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+// using Gatsby Head API to pimp my pages Head : https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
+export const Head = () => (
+  <>
+    <meta charSet="utf-8" />
+    <title>Thomas Viaules - 404</title>
+    <link rel="canonical" href="https://www.thomasviaules.com/" />
+    <meta property="og:title" content="Thomas Viaules - 404" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.thomasviaules.com/" />
+    <meta
+      property="og:description"
+      content="thomas viaules - I'm a web developer based in Montreal. Sorry, but this page is not working at the moment"
+    />
+    <meta property="og:image" content={Oglake} />
+  </>
+);
 
-const NotFoundPage = () => {
-  return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
-}
+const NotFoundPage = () => (
+  <div className="not-found">
+    <h1>Ooops!</h1>
+    <h2>404 - PAGE NOT FOUND</h2>
+    <p>
+      The page you are looking for might have been removed, had its name changed
+      or is temporarily unavailable.
+    </p>
+  </div>
+);
 
-export default NotFoundPage
-
-export const Head = () => <title>Not found</title>
+export default NotFoundPage;

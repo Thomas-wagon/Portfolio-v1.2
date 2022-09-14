@@ -1,0 +1,100 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+
+  .content {
+    display: flex;
+    align-items: flex-start;
+
+    .profil {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      margin-top: 22.4px;
+
+      .card {
+        position: relative;
+        min-width: 360px;
+        width: 360px;
+        height: 590px;
+        background: #fff;
+        margin: 50px 10px 0 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0;
+        border-radius: 5px;
+
+        .photo {
+          position: relative;
+          width: 260px;
+          top: -85px;
+          left: 50px;
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+          border-radius: 5px;
+        }
+
+        .text {
+          position: relative;
+          padding: 0 15px;
+          margin: -70px 0;
+          text-align: center;
+          color: #111;
+          box-sizing: border-box;
+          a {
+            text-decoration: none;
+            color: #1f93b8;
+          }
+        }
+      }
+    }
+  }
+  .tools {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profil,
+  .tools {
+    flex: 1 1 0px;
+    margin: 0 30px;
+  }
+}
+
+// media queries
+
+@media (max-width: 768px) {
+  .content {
+    flex-wrap: wrap;
+    .tools {
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .about {
+    .content {
+      .profil {
+        .card {
+          height: inherit;
+          width: 95%;
+          max-height: 1000px;
+          padding-bottom: 70px;
+          min-width: 300px;
+          .photo {
+            width: 60%;
+            left: unset;
+            margin-left: 20%;
+          }
+        }
+      }
+
+      .profil,
+      .tools {
+        margin: 0;
+      }
+    }
+  }
+}
