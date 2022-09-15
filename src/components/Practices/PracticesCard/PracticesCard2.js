@@ -3,6 +3,13 @@ import React, { useState } from "react";
 //import style
 import "./PracticesCard2.scss";
 
+// import components
+import Modal from "../../UI/Modal/Modal";
+import TictactoeGame from "../PracticesCard/Tictactoe/Tictactoe";
+
+//import image
+import Tictactoe from "../../../images/tictactoe.png";
+
 const PracticesCard2 = (props) => {
   //original state
   const [showModal, setShowModal] = useState(false);
@@ -26,11 +33,11 @@ const PracticesCard2 = (props) => {
         </div>
       </div>
       <div className="practices-card-content">
-        <img src={SmileyPuzzle} alt="sliding puzzle" />
+        <img src={Tictactoe} alt="sliding puzzle" />
         <div className="practices-card-description">
           <p>{props.description}</p>
           <Modal>
-            <SlidingPuzzle />
+            <TictactoeGame />
           </Modal>
           <button onClick={() => setShowModal(!showModal)}>Start !</button>
         </div>

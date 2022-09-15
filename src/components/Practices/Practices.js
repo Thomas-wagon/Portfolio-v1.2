@@ -5,6 +5,8 @@ import "./Practices.scss";
 
 //import image
 import ReactIcon from "../../images/react_no_bg.png";
+
+//import components
 import PracticesCard from "./PracticesCard/PracticesCard";
 
 const Practices = () => {

@@ -1,22 +1,25 @@
-import React, { useState } from "react";
+import React, { Component, useState } from "react";
 
 //import style
-import "./Practices.scss";
-
-//import data
-import PracticesData from "./PracticesData.json";
+import "./Practices2.scss";
 
 //import image
 import ReactIcon from "../../images/react_no_bg.png";
+
+//import data
+import PracticesData from "./PracticesData.json";
 
 //import component
 import PracticesCard2 from "./PracticesCard/PracticesCard2";
 import Modal from "../../components/UI/Modal/Modal";
 import TictactoeGame from "./PracticesCard/Tictactoe/Tictactoe";
+import Calculator from "./PracticesCard/Calculator/Calculator";
 
 const Practices2 = (props) => {
   //original state
   const [showModal, setShowModal] = useState(false);
+  const componentNames = { tictactoe: TictactoeGame };
+  var MappedComponent = componentNames[0];
 
   return (
     <div id="practices" className="practices">
@@ -34,19 +37,25 @@ const Practices2 = (props) => {
           </p>
         </div>
       </div>
-      {PracticesData.map((data) => {
-        return (
-          <PracticesCard2
-            title={data.title}
-            image={data.image}
-            description={data.description}
-          >
-            <Modal title={props.title}>
-              <TictactoeGame showModal={showModal} />
-            </Modal>
-          </PracticesCard2>
-        );
-      })}
+      <div className="practices-list">
+        {PracticesData.map((data) => {
+          return (
+            <PracticesCard2
+              title={data.title}
+              image={data.image}
+              description={data.description}
+            >
+              {/* <Modal
+              showModal={showModal}
+              setShowModal={setShowModal}
+              title={props.title}
+            >
+              <MappedComponent showModal={showModal} />
+            </Modal> */}
+            </PracticesCard2>
+          );
+        })}
+      </div>
     </div>
   );
 };
