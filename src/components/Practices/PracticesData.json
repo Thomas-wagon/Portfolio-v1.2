@@ -1,14 +1,9 @@
 [
   {
     "title": "Tic Tac Toe",
+    "component": "TictactoeGame",
     "image": "tictactoe.png",
     "description": "The player who succeeds in placing three of their marks in an horizontal, vertical, or diagonal row is the winner",
     "program": "Tictactoe"
-  },
-  {
-    "title": "Sliding Puzzle",
-    "image": "smiley_puzzle.png",
-    "description": "Slide the tiles in the correct direction to reveal the smiley",
-    "program": "SlidingPuzzle"
   }
 ]
