@@ -6,7 +6,7 @@ import Banner from "../components/Banner/Banner";
 import Navbar from "../components/NavBar/Navbar";
 import About from "../components/About/About";
 import Projects from "../components/Projects/Projects";
-import Practices2 from "../components/Practices/Practices2";
+import Practices3 from "../components/Practices/Practices3";
 import Contact from "../components/Contact/Contact";
 // import Practices2 from "../components/Practices/Practices2"
 
@@ -37,7 +37,7 @@ const IndexPage = () => {
       <Navbar />
       <About />
       <Projects />
-      <Practices2 />
+      <Practices3 />
       <Contact />
     </div>
   );
