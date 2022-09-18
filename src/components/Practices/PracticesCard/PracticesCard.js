@@ -1,38 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 
 //import style
 import "./PracticesCard.scss";
 
-// import components
-import Modal from "../../UI/Modal/Modal";
-import TictactoeGame from "../PracticesCard/Tictactoe/Tictactoe";
-
-//import image
-import Tictactoe from "../../../images/tictactoe.png";
-
-const PracticesCard = (props) => {
-  //original state
-  const [showModal, setShowModal] = useState(false);
-
-  //methodes
-
+const PracticesCard = ({ giveToCard, ...props }) => {
+  const { id, title, image, description } = props.data;
+  function buttonClicked() {
+    giveToCard(id);
+  }
   return (
     <div className="practices-card">
       <div className="title">
-        <h3>{props.title}</h3>
+        <h3>{title}</h3>
       </div>
       <div className="practices-card-content">
-        <img src={Tictactoe} alt="tictactoe" />
+        <img src={`../../../images/${image}`} alt={image} />
         <div className="practices-card-description">
-          <p>{props.description}</p>
-          <Modal
-            showModal={showModal}
-            setShowModal={setShowModal}
-            title={props.title}
-          >
-            <TictactoeGame showModal={showModal} />
-          </Modal>
-          <button onClick={() => setShowModal(!showModal)}>Start !</button>
+          <p>{description}</p>
+          {props.children}
+          <button onClick={buttonClicked}>Start !</button>
         </div>
       </div>
     </div>

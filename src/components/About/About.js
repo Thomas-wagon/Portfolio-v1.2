@@ -45,9 +45,13 @@ const About = () => {
         <div className="tools">
           {AboutData.map((data) => {
             return (
-              <ToolsCard toolType={data.toolType}>
+              <ToolsCard key={data.id} toolType={data.toolType}>
                 {data.toolList.map((tool) => (
-                  <ToolIcon toolTip={tool.toolTip} toolIcon={tool.toolIcon} />
+                  <ToolIcon
+                    key={tool.id}
+                    toolTip={tool.toolTip}
+                    toolIcon={tool.toolIcon}
+                  />
                 ))}
               </ToolsCard>
             );
