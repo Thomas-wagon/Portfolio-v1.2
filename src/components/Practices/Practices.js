@@ -16,7 +16,7 @@ const tile = [
   {
     id: 1,
     title: "Tic Tac Toe",
-    component: Tictactoe,
+    challenge: Tictactoe,
     image: "tictactoe.png",
     description:
       "The player who succeeds in placing three of his marks in an horizontal, vertical, or diagonal row is the winner",
@@ -25,10 +25,10 @@ const tile = [
   {
     id: 2,
     title: "Calculator",
-    component: Calculator,
+    challenge: Calculator,
     image: "calculator.png",
     description:
-      "theme customizable calculator. I found this little challenge on the platforme https://www.frontendmentor.io/ and challenged myself to code and use in my portfolio",
+      "customizable themed calculator. I found this little practice on the platform www.frontendmentor.io and challenged myself to code it and use it in my portfolio",
     program: "Calculator",
   },
 ];
@@ -54,12 +54,12 @@ const Practices = (props) => {
       </div>
       <div className="practices-list">
         {tile.map((data) => {
-          const Comp = data.component;
+          const Challenge = data.challenge;
           return (
             <PracticesCard key={data.id} data={data} giveToCard={setShowModal}>
               {showModal === data.id && (
                 <Modal onClose={() => setShowModal(null)} title={props.title}>
-                  <Comp />
+                  <Challenge />
                 </Modal>
               )}
             </PracticesCard>

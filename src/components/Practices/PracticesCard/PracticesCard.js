@@ -14,7 +14,7 @@ const PracticesCard = ({ giveToCard, ...props }) => {
         <h3>{title}</h3>
       </div>
       <div className="practices-card-content">
-        <img src={`../../../images/${image}`} alt={image} />
+        <img src={`../../../images/${image}`} alt={title} />
         <div className="practices-card-description">
           <p>{description}</p>
           {props.children}

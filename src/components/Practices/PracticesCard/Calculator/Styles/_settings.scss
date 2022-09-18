@@ -1,9 +1,9 @@
-@font-face {
-  font-family: "font-1";
-  src: url(../assets/fonts/LeagueSpartan-VariableFont_wght.ttf);
-}
+// @font-face {
+//   font-family: "font-1";
+//   src: url(../assets/fonts/LeagueSpartan-VariableFont_wght.ttf);
+// }
 
-$font-1: "font-1", sans-serif;
+// $font-1: "font-1", sans-serif;
 
 // theme 1
 $t0-color-main: #3b4664;
@@ -65,29 +65,27 @@ $t2-color-text-button-2: white;
 $t2-color-text-button-3: black;
 $t2-color-output: #fae358;
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: $font-1;
+.calculator {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  // font-family: $font-1;
   color: white;
-}
+  .t1 {
+    background: $t1-color-main;
+  }
 
-.t1 body {
-  background: $t1-color-main;
-}
+  .t2 {
+    background: $t2-color-main;
+  }
 
-.t2 body {
-  background: $t2-color-main;
-}
+  li {
+    list-style-type: none;
+  }
 
-li {
-  list-style-type: none;
-}
-
-p {
-  font-size: 12px;
+  p {
+    font-size: 12px;
+  }
 }
