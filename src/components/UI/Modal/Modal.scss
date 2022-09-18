@@ -4,7 +4,7 @@
   background-color: white;
   width: 80%;
   min-width: 315px;
-  height: 660px;
+  height: 80%;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   padding: 16px;
   left: 10%;
@@ -37,7 +37,7 @@
 @media (max-width: 576px) {
   .modal {
     width: 95%;
-    height: 520px;
+    height: 80%;
     left: unset;
     top: 4%;
 

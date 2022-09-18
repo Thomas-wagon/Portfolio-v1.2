@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Header from "./components/Header";
-import Screen from "./components/Screen";
-import Pad from "./components/Pad";
+import Header from "./Components/Header";
+import Screen from "./Components/Screen";
+import Pad from "./Components/Pad";
+import "./Styles/index.scss";
 
 const App = () => {
   /*useEffect(() => {
@@ -40,11 +41,11 @@ const App = () => {
           ? button.value
           : input.sign !== ""
           ? input.num
-          : (input.num + button.value).substring(0, 16),
+          : (input.num + button.value).substring(0, 14),
       res:
         input.res === 0 || input.res === "0" || isNaN(input.res)
           ? button.value
-          : (input.res + button.value).substring(0, 16),
+          : (input.res + button.value).substring(0, 14),
     });
   }
 
@@ -138,7 +139,7 @@ const App = () => {
             ? "Can't divide with 0"
             : math(Number(input.num), input.sign, Number(input.res))
                 .toString()
-                .substring(0, 16),
+                .substring(0, 14),
       });
     }
   }
