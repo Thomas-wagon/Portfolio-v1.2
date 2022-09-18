@@ -1,14 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Header from "./Components/Header";
 import Screen from "./Components/Screen";
 import Pad from "./Components/Pad";
 import "./Styles/index.scss";
 
 const App = () => {
-  /*useEffect(() => {
-    console.log(input);
-  });*/
-
   // variables
   const [theme, setTheme] = useState(0);
   const [input, setInput] = useState({ num: 0, sign: "", res: 0 });
