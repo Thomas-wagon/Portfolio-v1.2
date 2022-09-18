@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 //import style
 import "./Practices.scss";
@@ -6,10 +6,36 @@ import "./Practices.scss";
 //import image
 import ReactIcon from "../../images/react_no_bg.png";
 
-//import components
+//import component
 import PracticesCard from "./PracticesCard/PracticesCard";
+import Modal from "../UI/Modal/Modal";
+import Tictactoe from "./PracticesCard/Tictactoe/Tictactoe";
+import Calculator from "./PracticesCard/Calculator/Calculator";
 
-const Practices = () => {
+const tile = [
+  {
+    id: 1,
+    title: "Tic Tac Toe",
+    component: Tictactoe,
+    image: "tictactoe.png",
+    description:
+      "The player who succeeds in placing three of his marks in an horizontal, vertical, or diagonal row is the winner",
+    program: "Tictactoe",
+  },
+  {
+    id: 2,
+    title: "Calculator",
+    component: Calculator,
+    image: "calculator.png",
+    description:
+      "theme customizable calculator. I found this little challenge on the platforme https://www.frontendmentor.io/ and challenged myself to code and use in my portfolio",
+    program: "Calculator",
+  },
+];
+
+const Practices = (props) => {
+  //original state
+  const [showModal, setShowModal] = useState(null);
   return (
     <div id="practices" className="practices">
       <h2>React Practices</h2>
@@ -26,11 +52,20 @@ const Practices = () => {
           </p>
         </div>
       </div>
-      <PracticesCard
-        title="Tic Tac Toe"
-        description="The player who succeeds in placing three of their marks in a
-            horizontal, vertical, or diagonal row is the winner"
-      ></PracticesCard>
+      <div className="practices-list">
+        {tile.map((data) => {
+          const Comp = data.component;
+          return (
+            <PracticesCard key={data.id} data={data} giveToCard={setShowModal}>
+              {showModal === data.id && (
+                <Modal onClose={() => setShowModal(null)} title={props.title}>
+                  <Comp />
+                </Modal>
+              )}
+            </PracticesCard>
+          );
+        })}
+      </div>
     </div>
   );
 };
