@@ -1,10 +1,8 @@
 import React from "react";
-import "./Contact.scss";
+import { StaticImage } from "gatsby-plugin-image";
 
-//import image and icons
-import Gmail from "../../images/gmail.png";
-import Github from "../../images/github.png";
-import Linkedin from "../../images/linkedin.png";
+//import style
+import "./Contact.scss";
 
 const Contact = () => {
   return (
@@ -12,21 +10,36 @@ const Contact = () => {
       <h2>Contact</h2>
       <div className="icons">
         <a href="mailto:thomas.viaules@gmail.com" className="icon">
-          <img src={Gmail} alt="Gmail" />
+          <StaticImage
+            src="../../images/gmail.png"
+            alt="Gmail"
+            placeholder="tracedSVG"
+            className="photo"
+          />
         </a>
         <a
           target="blank_"
           href="https://github.com/Thomas-wagon"
           className="icon"
         >
-          <img src={Github} alt="Github" />
+          <StaticImage
+            src="../../images/github.png"
+            alt="Github"
+            placeholder="tracedSVG"
+            className="photo"
+          />
         </a>
         <a
           target="blank_"
           href="https://www.linkedin.com/in/thomas-viaules/"
           className="icon"
         >
-          <img src={Linkedin} alt="Linkedin" />
+          <StaticImage
+            src="../../images/linkedin.png"
+            alt="Linkedin"
+            placeholder="tracedSVG"
+            className="photo"
+          />
         </a>
       </div>
     </div>

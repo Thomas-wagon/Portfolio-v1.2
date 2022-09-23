@@ -24,7 +24,7 @@
   .practices-card-content {
     display: flex;
     align-items: center;
-    & > .photo {
+    & > img {
       width: 160px;
       margin: -5px 15px 10px 15px;
       border-radius: 5px;
@@ -71,7 +71,7 @@
     .practices-card-content {
       flex-direction: column;
 
-      .photo {
+      img {
         margin: 0;
       }
 

@@ -34,7 +34,7 @@ const Projects = () => {
           </a>
         </div>
       </div>
-      <div id="selector" className="card right">
+      <div id="selector" className="card left">
         <StaticImage
           src="../../images/portfolio.png"
           alt="My portfolio"

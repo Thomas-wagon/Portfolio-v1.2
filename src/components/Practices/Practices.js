@@ -4,9 +4,6 @@ import { StaticImage } from "gatsby-plugin-image";
 //import style
 import "./Practices.scss";
 
-//import image
-import ReactIcon from "../../images/react_no_bg.png";
-
 //import component
 import PracticesCard from "./PracticesCard/PracticesCard";
 import Modal from "../UI/Modal/Modal";
