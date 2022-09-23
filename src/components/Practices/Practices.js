@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
 //import style
 import "./Practices.scss";
@@ -40,7 +41,12 @@ const Practices = (props) => {
     <div id="practices" className="practices">
       <h2>React Practices</h2>
       <div className="content">
-        <img src={ReactIcon} alt="React" />
+        <StaticImage
+          src="../../images/react_no_bg.png"
+          alt="React"
+          placeholder="tracedSVG"
+          className="react"
+        />
         <div className="text">
           <h3>Introduction</h3>
           <p>

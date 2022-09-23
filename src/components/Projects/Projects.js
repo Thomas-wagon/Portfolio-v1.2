@@ -1,17 +1,18 @@
 import React from "react";
 import "./Projects.scss";
-
-// import images and logo
-import Portfolio from "../../images/portfolio.png";
-import Yummy from "../../images/yummy.png";
-import Leohnart from "../../images/leohnart.png";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Projects = () => {
   return (
     <div id="projects" className="projects">
       <h2>Projects</h2>
       <div id="selector" className="card right">
-        <img className="photo" src={Leohnart} alt="Leonartmusic.com" />
+        <StaticImage
+          src="../../images/leohnart.png"
+          alt="Leonartmusic.com"
+          placeholder="tracedSVG"
+          className="photo"
+        />
         <div className="text">
           <h3>Leohnart - fevrier 2021</h3>
           <p>
@@ -33,8 +34,13 @@ const Projects = () => {
           </a>
         </div>
       </div>
-      <div id="selector" className="card left">
-        <img className="photo" src={Portfolio} alt="My portfolio" />
+      <div id="selector" className="card right">
+        <StaticImage
+          src="../../images/portfolio.png"
+          alt="My portfolio"
+          placeholder="tracedSVG"
+          className="photo"
+        />
         <div className="text">
           <h3>My Portfolio - Septembre 2020</h3>
           <p>
@@ -52,7 +58,12 @@ const Projects = () => {
         </div>
       </div>
       <div id="selector" className="card right">
-        <img className="photo" src={Yummy} alt="Yummy Palette" />
+        <StaticImage
+          src="../../images/yummy.png"
+          alt="Yummy Palette"
+          placeholder="tracedSVG"
+          className="photo"
+        />
         <div className="text">
           <h3>Yummy Palette - July 2020</h3>
           <p>
