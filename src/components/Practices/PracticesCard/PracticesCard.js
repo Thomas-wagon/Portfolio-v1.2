@@ -1,4 +1,5 @@
 import React from "react";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 //import style
 import "./PracticesCard.scss";
@@ -14,7 +15,13 @@ const PracticesCard = ({ giveToCard, ...props }) => {
         <h3>{title}</h3>
       </div>
       <div className="practices-card-content">
-        <img src={`../../../images/${image}`} alt={title} />
+        <GatsbyImage
+          image={getImage(image)}
+          alt={title}
+          placeholder="tracedSVG"
+          className="photo"
+        />
+        {/* <img src={`../../../images/${image}`} alt={title} /> */}
         <div className="practices-card-description">
           <p>{description}</p>
           {props.children}

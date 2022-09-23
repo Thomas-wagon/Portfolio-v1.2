@@ -1,4 +1,5 @@
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
 //import style
 import "./About.scss";
@@ -10,9 +11,6 @@ import AboutData from "./AboutData.json";
 import ToolsCard from "./ToolCard/ToolsCard";
 import ToolIcon from "./ToolCard/ToolIcon/ToolIcon";
 
-// import images and logo
-import Thomas from "../../images/thomas.png";
-
 const About = () => {
   return (
     <div id="about" className="about">
@@ -20,7 +18,12 @@ const About = () => {
       <div className="content">
         <div className="profil">
           <div className="card">
-            <img className="photo" src={Thomas} alt="me" />
+            <StaticImage
+              src="../../images/thomas.png"
+              alt="me"
+              placeholder="tracedSVG"
+              className="photo"
+            />
             <div className="text">
               <p>
                 After 7 years working as an industrial designer, I wanted to
