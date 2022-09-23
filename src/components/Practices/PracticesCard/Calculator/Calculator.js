@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Header from "./Components/Header";
-import Screen from "./Components/Screen";
-import Pad from "./Components/Pad";
-import "./Styles/index.scss";
+import Header from "./_Components_/Header";
+import Screen from "./_Components_/Screen";
+import Pad from "./_Components_/Pad";
+import "./_Styles_/index.scss";
 
 const App = () => {
   // variables

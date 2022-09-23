@@ -6,6 +6,9 @@
   color: $t0-color-output;
   height: 80px;
   border-radius: 5px;
+  h1 {
+    margin-right: 20px;
+  }
 }
 
 .t1 .screen {
@@ -16,8 +19,4 @@
 .t2 .screen {
   background-color: $t2-color-screen;
   color: $t2-color-output;
-}
-
-h1 {
-  margin-right: 20px;
 }
