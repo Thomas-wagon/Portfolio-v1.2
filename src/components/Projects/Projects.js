@@ -57,7 +57,7 @@ const Projects = () => {
           </a>
         </div>
       </div>
-      <div id="selector" className="card right">
+      <div id="selector" className="card left">
         <StaticImage
           src="../../images/yummy.png"
           alt="Yummy Palette"
