@@ -34,7 +34,7 @@ const Projects = () => {
           </a>
         </div>
       </div>
-      <div id="selector" className="card left">
+      <div id="selector" className="card right">
         <StaticImage
           src="../../images/portfolio.png"
           alt="My portfolio"
@@ -57,7 +57,7 @@ const Projects = () => {
           </a>
         </div>
       </div>
-      <div id="selector" className="card left">
+      <div id="selector" className="card right">
         <StaticImage
           src="../../images/yummy.png"
           alt="Yummy Palette"
