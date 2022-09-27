@@ -1,16 +1,13 @@
 import React from "react";
 import "./Banner.scss";
-import { StaticImage } from "gatsby-plugin-image";
+
+// import images
+import Lake from "../../images/lake.png";
 
 const Banner = () => {
   return (
     <div id="home" className="banner">
-      <StaticImage
-        src="../../images/lake.png"
-        alt="lake"
-        placeholder="tracedSVG"
-        className="hero"
-      />
+      <img src={Lake} alt="lake" />
     </div>
   );
 };

@@ -3,6 +3,11 @@ module.exports = {
     siteUrl: `https://www.thomasviaules.com/`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
+    // `gatsby-plugin-image`,
+    // `gatsby-plugin-sharp`,
+    // `gatsby-transformer-sharp`,
+    // `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -10,10 +15,13 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `practices`,
+    //     path: `${__dirname}/src/components/Practices/`,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

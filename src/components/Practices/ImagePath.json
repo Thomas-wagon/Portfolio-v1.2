@@ -1,8 +1,19 @@
 [
   {
-    "image": "../../images/tictactoe.png"
+    "id": 1,
+    "title": "Tic Tac Toe",
+    "challenge": Tictactoe,
+    "image": "../../images/tictactoe.png",
+    "description":
+      "The player who succeeds in placing three of his marks in an horizontal, vertical, or diagonal row is the winner",
+    "program": "Tictactoe"
   },
   {
-    "image": "../../images/calculator.png"
+    "id": 2,
+    "title": "Calculator",
+    "challenge": Calculator,
+    "image": "../../images/calculator.png",
+    "description": "customizable themed calculator. I found this little practice on the platform www.frontendmentor.io and challenged myself to code it and use it in my portfolio",
+    "program": "Calculator"
   }
 ]
