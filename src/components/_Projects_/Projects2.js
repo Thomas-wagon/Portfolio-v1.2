@@ -1,5 +1,5 @@
 import React from "react";
-import "./Projects.scss";
+import "./Projects2.scss";
 import { StaticImage } from "gatsby-plugin-image";
 
 const Projects = () => {

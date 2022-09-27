@@ -5,10 +5,9 @@ import "../styles/styles.scss";
 import Banner from "../components/Banner/Banner";
 import Navbar from "../components/NavBar/Navbar";
 import About from "../components/About/About";
-import Projects from "../components/Projects/Projects";
+import Projects from "../components/_Projects_/Projects";
 import Practices from "../components/Practices/Practices";
 import Contact from "../components/Contact/Contact";
-// import Practices2 from "../components/Practices/Practices2"
 
 // import images
 import Oglake from "../images/og_lake.png";
